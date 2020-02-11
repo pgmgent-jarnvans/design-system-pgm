@@ -1,0 +1,5 @@
+<ul>
+    {% for collectionPage in collections.all | eleventyNavigation %}
+        <li class="">{{ collectionPage.key }}</li>
+    {% endfor %}
+</ul>
