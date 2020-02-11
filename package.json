@@ -1,18 +1,19 @@
 {
   "name": "design-system-pgm",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Starter project for a Design System website.",
+  "main": ".eleventy.js",
   "scripts": {
     "build": "npx @11ty/eleventy",
     "dev": "npx @11ty/eleventy --serve",
     "start": "npm run dev"
   },
   "keywords": [],
-  "author": "",
+  "author": "Olivier Parent",
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^0.10.0",
-    "@11ty/eleventy-navigation": "^0.1.4"
+    "@11ty/eleventy-navigation": "^0.1.4",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1"
   }
 }
