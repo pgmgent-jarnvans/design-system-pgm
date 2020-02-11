@@ -1,5 +1,25 @@
-<ul>
-    {% for collectionPage in collections.all | eleventyNavigation %}
-        <li class="">{{ collectionPage.key }}</li>
-    {% endfor %}
-</ul>
+<nav class="☠-sidebar">
+    <h1 class="☠-sidebar_title">
+        <a class="☠-sidebar_button" href="{{ '/' | url }}">{{ site.title }}</a>
+    </h1>
+    <ul class="☠-sidebar_list -☠-level-0">
+        {% for collectionPage in collections.all | eleventyNavigation %}
+        <li class="☠-sidebar_item -☠-level-0">
+            {% if collectionPage.url %}
+            <a class="☠-sidebar_button" href="{{ collectionPage.url | url }}"{% if page.url == collectionPage.url %}aria-current="page"{% endif %}>{{ collectionPage.key }}</a>
+            {% else %}
+            <span class="☠-sidebar_button">{{ collectionPage.key }}</span>
+            {% endif %}
+            {% if collectionPage.children %}
+            <ul class="☠-sidebar_list -☠-level-1">
+                {% for childCollectionPage in collectionPage.children %}
+                <li class="☠-sidebar_item -☠-level-1">
+                    <a class="☠-sidebar_button" href="{{ childCollectionPage.url | url }}"{% if page.url == childCollectionPage.url %} aria-current="page"{% endif %}>{{ childCollectionPage.key }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+</nav>
