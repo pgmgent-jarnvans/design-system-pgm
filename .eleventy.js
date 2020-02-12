@@ -13,6 +13,7 @@ module.exports = function (eleventyConfig) {
       output: 'docs'
     },
     htmlTemplateEngine: 'njk',
+    markdownTemplateEngine: 'njk',
     pathPrefix: '/design-system-pgm/'
   };
 };
