@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="{{ site.lang }}">
 
@@ -5,16 +6,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% if title %}{{ title }} | {% endif %}{{ site.title }}</title>
+    {% include 'components/highlight-themes.html' %}
     <link rel="stylesheet" href="{{ '/assets/css/☠.css' | url }}">
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | url }}">
 </head>
 
 <body>
-    {% include 'components/sidebar.njk' %}
+{% include 'components/sidebar.html' %}
     <main>
-        {{ content | safe }}
+{{ content | safe }}
     </main>
-    {% include 'components/footer.njk' %}
+{% include 'components/footer.html' %}
 </body>
 
 </html>

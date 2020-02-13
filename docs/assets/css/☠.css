@@ -24,6 +24,7 @@
 
 .☠-sidebar_title.-☠-level-1 {}
 
-[aria-current="page"] {
-  background-color: brown;
+[aria-current=page] {
+  background-color: var(--☠-c-primary);
+  color: white;
 }
