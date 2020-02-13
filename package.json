@@ -4,8 +4,12 @@
   "description": "Starter project for a Design System website.",
   "main": ".eleventy.js",
   "scripts": {
-    "build": "npx @11ty/eleventy",
-    "dev": "npx @11ty/eleventy --serve",
+    "build:11ty": "npx @11ty/eleventy",
+    "build:sass": "npx sass sass/main.scss css/main.css",
+    "build": "npm run build:sass && npm run build:11ty",
+    "dev:11ty": "npx @11ty/eleventy --serve",
+    "dev:sass": "npx sass --watch sass/main.scss css/main.css",
+    "dev": "concurrently npm:dev:sass npm:dev:11ty",
     "start": "npm run dev"
   },
   "keywords": [],
@@ -14,6 +18,8 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.10.0",
     "@11ty/eleventy-navigation": "^0.1.4",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1"
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
+    "concurrently": "^5.1.0",
+    "sass": "^1.25.0"
   }
 }

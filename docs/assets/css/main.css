@@ -1,0 +1,47 @@
+.a-color-primary {
+  --color-100: #ff8080;
+  --color-200: #ff4d4d;
+  --color-300: #ff1a1a;
+  --color-500: red;
+  --color-700: #e60000;
+  --color-800: #b30000;
+  --color-900: maroon;
+}
+
+.a-color-secondary {
+  --color-100: #8080ff;
+  --color-200: #4d4dff;
+  --color-300: #1a1aff;
+  --color-500: blue;
+  --color-700: #0000e6;
+  --color-800: #0000b3;
+  --color-900: navy;
+}
+
+.a-color-tertiary {
+  --color-100: #01ff01;
+  --color-200: #00cd00;
+  --color-300: #009a00;
+  --color-500: green;
+  --color-700: #006700;
+  --color-800: #003400;
+  --color-900: #000100;
+}
+
+.m-card {
+  max-width: 20rem;
+}
+.m-card > * {
+  padding: 1rem;
+}
+.m-card_header {
+  background-color: red;
+}
+.m-card_body {
+  background-color: green;
+}
+.m-card_footer {
+  background-color: blue;
+}
+
+/*# sourceMappingURL=main.css.map */

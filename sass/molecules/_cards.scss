@@ -1,0 +1,19 @@
+.m-card {
+  max-width: 20rem;
+
+  >* {
+    padding: 1rem;
+  }
+
+  &_header {
+    background-color: red;
+  }
+
+  &_body {
+    background-color: green;
+  }
+
+  &_footer {
+    background-color: blue;
+  }
+}
