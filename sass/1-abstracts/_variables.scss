@@ -1,3 +1,4 @@
+@use 'sass:color';
 @use 'sass:map';
 
 $color-scheme: (
@@ -10,9 +11,9 @@ $color-scheme: (
 $swatches: ();
 @each $name, $value in $color-scheme {
   $colors: (
-      '#{$name}-100': #{$value},
+      '#{$name}-100': color.scale($value, $lightness: 30%),
       '#{$name}-500': #{$value},
-      '#{$name}-900': #{$value},
+      '#{$name}-900': color.scale($value, $lightness: -30%,
   );
   $swatches: map.merge($swatches, $colors);
 }
