@@ -2,18 +2,66 @@
 @import url("https://fonts.googleapis.com/css?family=Long+Cang&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/themes/prism-tomorrow.min.css");
 :root {
-  --☠-a-primary-100: red;
+  --☠-a-primary-100: #ff8080;
+  --☠-a-primary-200: #ff5c5c;
+  --☠-a-primary-300: #ff3d3d;
+  --☠-a-primary-400: #ff1f1f;
   --☠-a-primary-500: red;
-  --☠-a-primary-900: red;
-  --☠-a-secondary-100: blue;
+  --☠-a-primary-600: #e00000;
+  --☠-a-primary-700: #c20000;
+  --☠-a-primary-800: #a30000;
+  --☠-a-primary-900: maroon;
+  --☠-a-secondary-100: #8080ff;
+  --☠-a-secondary-200: #5c5cff;
+  --☠-a-secondary-300: #3d3dff;
+  --☠-a-secondary-400: #1f1fff;
   --☠-a-secondary-500: blue;
-  --☠-a-secondary-900: blue;
-  --☠-a-accent-100: green;
+  --☠-a-secondary-600: #0000e0;
+  --☠-a-secondary-700: #0000c2;
+  --☠-a-secondary-800: #0000a3;
+  --☠-a-secondary-900: navy;
+  --☠-a-accent-100: #40ff40;
+  --☠-a-accent-200: #0bff0b;
+  --☠-a-accent-300: #00dc00;
+  --☠-a-accent-400: #00ae00;
   --☠-a-accent-500: green;
-  --☠-a-accent-900: green;
-  --☠-a-neutral-100: gray;
+  --☠-a-accent-600: #007100;
+  --☠-a-accent-700: #006100;
+  --☠-a-accent-800: #005200;
+  --☠-a-accent-900: #004000;
+  --☠-a-neutral-100: silver;
+  --☠-a-neutral-200: #aeaeae;
+  --☠-a-neutral-300: #9e9e9e;
+  --☠-a-neutral-400: #8f8f8f;
   --☠-a-neutral-500: gray;
-  --☠-a-neutral-900: gray;
+  --☠-a-neutral-600: #717171;
+  --☠-a-neutral-700: #616161;
+  --☠-a-neutral-800: #525252;
+  --☠-a-neutral-900: #404040;
+}
+
+.☠-m-colorSwatch {
+  background-color: #e6e6e6;
+  border-radius: 0.5em;
+  display: grid;
+  font-family: "Long Cang", serif;
+  grid-template-columns: 20rem auto;
+  grid-template-rows: repeat(2, auto);
+  overflow: hidden;
+}
+.☠-m-colorSwatch + .☠-m-colorSwatch {
+  margin-top: 1rem;
+}
+.☠-m-colorSwatch_body > pre {
+  margin: 0 0 0 1rem;
+}
+.☠-m-colorSwatch_head {
+  padding: 1rem;
+}
+.☠-m-colorSwatch_swatch {
+  display: flex;
+  grid-column-start: 1;
+  grid-row-start: span 2;
 }
 
 .☠-o-sidebar [aria-current=page] {
