@@ -1,0 +1,18 @@
+@use 'sass:map';
+
+$color-scheme: (
+  'primary': 'red',
+  'secondary': 'blue',
+  'accent': 'green',
+  'neutral': 'gray',
+);
+
+$swatches: ();
+@each $name, $value in $color-scheme {
+  $colors: (
+      '#{$name}-100': #{$value},
+      '#{$name}-500': #{$value},
+      '#{$name}-900': #{$value},
+  );
+  $swatches: map.merge($swatches, $colors);
+}
