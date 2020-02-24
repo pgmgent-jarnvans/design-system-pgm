@@ -1,0 +1,11 @@
+$color-palette: ('primary': red, 'secondary': blue, 'tertiary': green )
+
+@each $color-key, $color-value in $color-palette
+  .☠-a-color-#{$color-key}
+    --color-100: #{lighten($color-value, 25%)}
+    --color-200: #{lighten($color-value, 15%)}
+    --color-300: #{lighten($color-value, 5%)}
+    --color-500: #{$color-value}
+    --color-700: #{darken($color-value, 5%)}
+    --color-800: #{darken($color-value, 15%)}
+    --color-900: #{darken($color-value, 25%)}

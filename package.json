@@ -5,10 +5,10 @@
   "main": ".eleventy.js",
   "scripts": {
     "build:11ty": "npx @11ty/eleventy",
-    "build:sass": "npx sass sass/main.scss css/main.css",
+    "build:sass": "npx sass sass:css scss:css",
     "build": "npm run build:sass && npm run build:11ty",
     "dev:11ty": "npx @11ty/eleventy --serve",
-    "dev:sass": "npx sass --watch sass/main.scss css/main.css",
+    "dev:sass": "npx sass --watch sass:css scss:css",
     "dev": "concurrently npm:dev:sass npm:dev:11ty",
     "start": "npm run dev"
   },

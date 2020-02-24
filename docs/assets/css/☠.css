@@ -1,30 +1,39 @@
-@import url('https://fonts.googleapis.com/css?family=Long+Cang&display=swap');
-
-:root {
-  --☠-c-primary: rgb(162, 0, 255);
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Long+Cang&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/themes/prism-tomorrow.min.css");
+.☠-a-color-primary {
+  --color-100: #ff8080;
+  --color-200: #ff4d4d;
+  --color-300: #ff1a1a;
+  --color-500: red;
+  --color-700: #e60000;
+  --color-800: #b30000;
+  --color-900: maroon;
 }
 
-.☠-heading {
-  color: var(--☠-c-primary);
-  font-family: 'Long Cang', cursive;
-  font-size: 3rem;
+.☠-a-color-secondary {
+  --color-100: #8080ff;
+  --color-200: #4d4dff;
+  --color-300: #1a1aff;
+  --color-500: blue;
+  --color-700: #0000e6;
+  --color-800: #0000b3;
+  --color-900: navy;
 }
 
-.☠-sidebar {}
+.☠-a-color-tertiary {
+  --color-100: #01ff01;
+  --color-200: #00cd00;
+  --color-300: #009a00;
+  --color-500: green;
+  --color-700: #006700;
+  --color-800: #003400;
+  --color-900: #000100;
+}
 
-.☠-sidebar_button {}
-
-.☠-sidebar_item {}
-
-.☠-sidebar_list {}
-
-.☠-sidebar_title {}
-
-.☠-sidebar_title.-☠-level-0 {}
-
-.☠-sidebar_title.-☠-level-1 {}
-
-[aria-current=page] {
+.☠-o-sidebar [aria-current=page] {
   background-color: var(--☠-c-primary);
   color: white;
 }
+
+/*# sourceMappingURL=%E2%98%A0.css.map */

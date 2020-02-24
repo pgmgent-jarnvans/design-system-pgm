@@ -1,22 +1,22 @@
-<nav class="☠-sidebar">
-    <h1 class="☠-sidebar_title">
-        <a class="☠-sidebar_button" href="{{ '/' | url }}">{{ site.title }}</a>
+<nav class="☠-o-sidebar">
+    <h1 class="☠-o-sidebar_title">
+        <a class="☠-o-sidebar_button" href="{{ '/' | url }}">{{ site.title }}</a>
     </h1>
-    <ul class="☠-sidebar_list -☠-level-0">
+    <ul class="☠-o-sidebar_list -☠-level-0">
 {%- for navPage in collections.all | eleventyNavigation %}
-        <li class="☠-sidebar_item -☠-level-0">
+        <li class="☠-o-sidebar_item -☠-level-0">
     {%- if navPage.url %}
-            <a class="☠-sidebar_button" href="{{ navPage.url | url }}"
+            <a class="☠-o-sidebar_button" href="{{ navPage.url | url }}"
                 {%- if page.url == navPage.url %} aria-current="page"
                 {%- endif %}>{{ navPage.key }}</a>
     {%- else %}
-            <span class="☠-sidebar_button">{{ navPage.key }}</span>
+            <span class="☠-o-sidebar_button">{{ navPage.key }}</span>
     {%- endif %}
     {%- if navPage.children %}
-            <ul class="☠-sidebar_list -☠-level-1">
+            <ul class="☠-o-sidebar_list -☠-level-1">
         {%- for navChildPage in navPage.children %}
-                <li class="☠-sidebar_item -☠-level-1">
-                    <a class="☠-sidebar_button" href="{{ navChildPage.url | url }}"
+                <li class="☠-o-sidebar_item -☠-level-1">
+                    <a class="☠-o-sidebar_button" href="{{ navChildPage.url | url }}"
                         {%- if navChildPage.url == page.url %} aria-current="page"
                         {%- endif %}>{{ navChildPage.key }}</a>
                 </li>
