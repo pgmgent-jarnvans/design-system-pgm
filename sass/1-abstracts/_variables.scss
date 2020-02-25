@@ -1,4 +1,5 @@
 @use 'sass:color';
+@use 'sass:list';
 @use 'sass:map';
 
 $color-palette: (
@@ -32,12 +33,15 @@ $color-palette: (
 );
 
 $color-scheme: (
-  'primary': red,
-  'secondary': blue,
-  'accent': green,
-  'neutral': gray,
+  'primary'  : list.nth($color-palette, 11),
+  'secondary': list.nth($color-palette, 17),
+  'accent'   : list.nth($color-palette, 5),
+  'neutral'  : list.nth($color-palette, 21),
+  'info'     : list.nth($color-palette, 10),
+  'warning'  : list.nth($color-palette,  2),
+  'danger'   : list.nth($color-palette,  4),
+  'success'  : list.nth($color-palette,  7),
 );
-
 
 $color-swatches: ();
 @each $name, $value in $color-scheme {

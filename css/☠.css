@@ -2,234 +2,462 @@
 @import url("https://fonts.googleapis.com/css?family=Long+Cang&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/themes/prism-tomorrow.min.css");
 :root {
-  --☠-a-colorPrimary-100: #ff8080;
-  --☠-a-colorPrimary-200: #ff5c5c;
-  --☠-a-colorPrimary-300: #ff3d3d;
-  --☠-a-colorPrimary-400: #ff1f1f;
-  --☠-a-colorPrimary-500: red;
-  --☠-a-colorPrimary-600: #e00000;
-  --☠-a-colorPrimary-700: #c20000;
-  --☠-a-colorPrimary-800: #a30000;
-  --☠-a-colorPrimary-900: maroon;
-  --☠-a-colorSecondary-100: #8080ff;
-  --☠-a-colorSecondary-200: #5c5cff;
-  --☠-a-colorSecondary-300: #3d3dff;
-  --☠-a-colorSecondary-400: #1f1fff;
-  --☠-a-colorSecondary-500: blue;
-  --☠-a-colorSecondary-600: #0000e0;
-  --☠-a-colorSecondary-700: #0000c2;
-  --☠-a-colorSecondary-800: #0000a3;
-  --☠-a-colorSecondary-900: navy;
-  --☠-a-colorAccent-100: #40ff40;
-  --☠-a-colorAccent-200: #0bff0b;
-  --☠-a-colorAccent-300: #00dc00;
-  --☠-a-colorAccent-400: #00ae00;
-  --☠-a-colorAccent-500: green;
-  --☠-a-colorAccent-600: #007100;
-  --☠-a-colorAccent-700: #006100;
-  --☠-a-colorAccent-800: #005200;
-  --☠-a-colorAccent-900: #004000;
-  --☠-a-colorNeutral-100: silver;
-  --☠-a-colorNeutral-200: #aeaeae;
-  --☠-a-colorNeutral-300: #9e9e9e;
-  --☠-a-colorNeutral-400: #8f8f8f;
-  --☠-a-colorNeutral-500: gray;
-  --☠-a-colorNeutral-600: #717171;
-  --☠-a-colorNeutral-700: #616161;
-  --☠-a-colorNeutral-800: #525252;
-  --☠-a-colorNeutral-900: #404040;
+  --☠-a-colorPrimary-100: #75a5fb;
+  --☠-a-colorPrimary-200: #4f8bfa;
+  --☠-a-colorPrimary-300: #2e76f9;
+  --☠-a-colorPrimary-400: #0d60f8;
+  --☠-a-colorPrimary-500: #0652dd;
+  --☠-a-colorPrimary-600: #0548c2;
+  --☠-a-colorPrimary-700: #053ea8;
+  --☠-a-colorPrimary-800: #04348d;
+  --☠-a-colorPrimary-900: #03296f;
+  --☠-a-colorSecondary-100: #f6a6b3;
+  --☠-a-colorSecondary-200: #f38c9e;
+  --☠-a-colorSecondary-300: #f1778b;
+  --☠-a-colorSecondary-400: #ef6179;
+  --☠-a-colorSecondary-500: #ed4c67;
+  --☠-a-colorSecondary-600: #ea2a4a;
+  --☠-a-colorSecondary-700: #d81636;
+  --☠-a-colorSecondary-800: #b6122e;
+  --☠-a-colorSecondary-900: #8e0e24;
+  --☠-a-colorAccent-100: #e2f29c;
+  --☠-a-colorAccent-200: #d9ee80;
+  --☠-a-colorAccent-300: #d2eb68;
+  --☠-a-colorAccent-400: #cbe850;
+  --☠-a-colorAccent-500: #c4e538;
+  --☠-a-colorAccent-600: #b9de1d;
+  --☠-a-colorAccent-700: #a0c019;
+  --☠-a-colorAccent-800: #87a115;
+  --☠-a-colorAccent-900: #697e10;
+  --☠-a-colorNeutral-100: #c8c8c8;
+  --☠-a-colorNeutral-200: #b9b9b9;
+  --☠-a-colorNeutral-300: #ababab;
+  --☠-a-colorNeutral-400: #9e9e9e;
+  --☠-a-colorNeutral-500: #919191;
+  --☠-a-colorNeutral-600: gray;
+  --☠-a-colorNeutral-700: #6e6e6e;
+  --☠-a-colorNeutral-800: #5d5d5d;
+  --☠-a-colorNeutral-900: #494949;
+  --☠-a-colorInfo-100: #6cd5ef;
+  --☠-a-colorInfo-200: #43c9eb;
+  --☠-a-colorInfo-300: #20bfe7;
+  --☠-a-colorInfo-400: #16a6ca;
+  --☠-a-colorInfo-500: #1289a7;
+  --☠-a-colorInfo-600: #107993;
+  --☠-a-colorInfo-700: #0e687f;
+  --☠-a-colorInfo-800: #0c586b;
+  --☠-a-colorInfo-900: #094554;
+  --☠-a-colorWarning-100: #fbcf8f;
+  --☠-a-colorWarning-200: #fac270;
+  --☠-a-colorWarning-300: #f9b655;
+  --☠-a-colorWarning-400: #f8ab3a;
+  --☠-a-colorWarning-500: #f79f1f;
+  --☠-a-colorWarning-600: #ec8f08;
+  --☠-a-colorWarning-700: #cc7c07;
+  --☠-a-colorWarning-800: #ac6806;
+  --☠-a-colorWarning-900: #865105;
+  --☠-a-colorDanger-100: #f59093;
+  --☠-a-colorDanger-200: #f27075;
+  --☠-a-colorDanger-300: #ef565b;
+  --☠-a-colorDanger-400: #ed3b41;
+  --☠-a-colorDanger-500: #ea2027;
+  --☠-a-colorDanger-600: #d6141b;
+  --☠-a-colorDanger-700: #b91117;
+  --☠-a-colorDanger-800: #9c0f14;
+  --☠-a-colorDanger-900: #7a0b0f;
+  --☠-a-colorSuccess-100: #4aff87;
+  --☠-a-colorSuccess-200: #17ff66;
+  --☠-a-colorSuccess-300: #00eb4f;
+  --☠-a-colorSuccess-400: #00bf41;
+  --☠-a-colorSuccess-500: #009432;
+  --☠-a-colorSuccess-600: #00822c;
+  --☠-a-colorSuccess-700: #007026;
+  --☠-a-colorSuccess-800: #005f20;
+  --☠-a-colorSuccess-900: #004a19;
 }
 
 .-☠-a-colorPrimary {
-  --☠-a-color-100: #ff8080;
-  --☠-a-color-200: #ff5c5c;
-  --☠-a-color-300: #ff3d3d;
-  --☠-a-color-400: #ff1f1f;
-  --☠-a-color-500: red;
-  --☠-a-color-600: #e00000;
-  --☠-a-color-700: #c20000;
-  --☠-a-color-800: #a30000;
-  --☠-a-color-900: maroon;
+  --☠-a-color-100: #75a5fb;
+  --☠-a-color-200: #4f8bfa;
+  --☠-a-color-300: #2e76f9;
+  --☠-a-color-400: #0d60f8;
+  --☠-a-color-500: #0652dd;
+  --☠-a-color-600: #0548c2;
+  --☠-a-color-700: #053ea8;
+  --☠-a-color-800: #04348d;
+  --☠-a-color-900: #03296f;
 }
 
 .-☠-a-colorSecondary {
-  --☠-a-color-100: #8080ff;
-  --☠-a-color-200: #5c5cff;
-  --☠-a-color-300: #3d3dff;
-  --☠-a-color-400: #1f1fff;
-  --☠-a-color-500: blue;
-  --☠-a-color-600: #0000e0;
-  --☠-a-color-700: #0000c2;
-  --☠-a-color-800: #0000a3;
-  --☠-a-color-900: navy;
+  --☠-a-color-100: #f6a6b3;
+  --☠-a-color-200: #f38c9e;
+  --☠-a-color-300: #f1778b;
+  --☠-a-color-400: #ef6179;
+  --☠-a-color-500: #ed4c67;
+  --☠-a-color-600: #ea2a4a;
+  --☠-a-color-700: #d81636;
+  --☠-a-color-800: #b6122e;
+  --☠-a-color-900: #8e0e24;
 }
 
 .-☠-a-colorAccent {
-  --☠-a-color-100: #40ff40;
-  --☠-a-color-200: #0bff0b;
-  --☠-a-color-300: #00dc00;
-  --☠-a-color-400: #00ae00;
-  --☠-a-color-500: green;
-  --☠-a-color-600: #007100;
-  --☠-a-color-700: #006100;
-  --☠-a-color-800: #005200;
-  --☠-a-color-900: #004000;
+  --☠-a-color-100: #e2f29c;
+  --☠-a-color-200: #d9ee80;
+  --☠-a-color-300: #d2eb68;
+  --☠-a-color-400: #cbe850;
+  --☠-a-color-500: #c4e538;
+  --☠-a-color-600: #b9de1d;
+  --☠-a-color-700: #a0c019;
+  --☠-a-color-800: #87a115;
+  --☠-a-color-900: #697e10;
 }
 
 .-☠-a-colorNeutral {
-  --☠-a-color-100: silver;
-  --☠-a-color-200: #aeaeae;
-  --☠-a-color-300: #9e9e9e;
-  --☠-a-color-400: #8f8f8f;
-  --☠-a-color-500: gray;
-  --☠-a-color-600: #717171;
-  --☠-a-color-700: #616161;
-  --☠-a-color-800: #525252;
-  --☠-a-color-900: #404040;
+  --☠-a-color-100: #c8c8c8;
+  --☠-a-color-200: #b9b9b9;
+  --☠-a-color-300: #ababab;
+  --☠-a-color-400: #9e9e9e;
+  --☠-a-color-500: #919191;
+  --☠-a-color-600: gray;
+  --☠-a-color-700: #6e6e6e;
+  --☠-a-color-800: #5d5d5d;
+  --☠-a-color-900: #494949;
+}
+
+.-☠-a-colorInfo {
+  --☠-a-color-100: #6cd5ef;
+  --☠-a-color-200: #43c9eb;
+  --☠-a-color-300: #20bfe7;
+  --☠-a-color-400: #16a6ca;
+  --☠-a-color-500: #1289a7;
+  --☠-a-color-600: #107993;
+  --☠-a-color-700: #0e687f;
+  --☠-a-color-800: #0c586b;
+  --☠-a-color-900: #094554;
+}
+
+.-☠-a-colorWarning {
+  --☠-a-color-100: #fbcf8f;
+  --☠-a-color-200: #fac270;
+  --☠-a-color-300: #f9b655;
+  --☠-a-color-400: #f8ab3a;
+  --☠-a-color-500: #f79f1f;
+  --☠-a-color-600: #ec8f08;
+  --☠-a-color-700: #cc7c07;
+  --☠-a-color-800: #ac6806;
+  --☠-a-color-900: #865105;
+}
+
+.-☠-a-colorDanger {
+  --☠-a-color-100: #f59093;
+  --☠-a-color-200: #f27075;
+  --☠-a-color-300: #ef565b;
+  --☠-a-color-400: #ed3b41;
+  --☠-a-color-500: #ea2027;
+  --☠-a-color-600: #d6141b;
+  --☠-a-color-700: #b91117;
+  --☠-a-color-800: #9c0f14;
+  --☠-a-color-900: #7a0b0f;
+}
+
+.-☠-a-colorSuccess {
+  --☠-a-color-100: #4aff87;
+  --☠-a-color-200: #17ff66;
+  --☠-a-color-300: #00eb4f;
+  --☠-a-color-400: #00bf41;
+  --☠-a-color-500: #009432;
+  --☠-a-color-600: #00822c;
+  --☠-a-color-700: #007026;
+  --☠-a-color-800: #005f20;
+  --☠-a-color-900: #004a19;
 }
 
 .-☠-a-colorPrimary-100 {
-  --☠-a-color: #ff8080;
+  --☠-a-color: #75a5fb;
 }
 
 .-☠-a-colorPrimary-200 {
-  --☠-a-color: #ff5c5c;
+  --☠-a-color: #4f8bfa;
 }
 
 .-☠-a-colorPrimary-300 {
-  --☠-a-color: #ff3d3d;
+  --☠-a-color: #2e76f9;
 }
 
 .-☠-a-colorPrimary-400 {
-  --☠-a-color: #ff1f1f;
+  --☠-a-color: #0d60f8;
 }
 
 .-☠-a-colorPrimary-500 {
-  --☠-a-color: red;
+  --☠-a-color: #0652dd;
 }
 
 .-☠-a-colorPrimary-600 {
-  --☠-a-color: #e00000;
+  --☠-a-color: #0548c2;
 }
 
 .-☠-a-colorPrimary-700 {
-  --☠-a-color: #c20000;
+  --☠-a-color: #053ea8;
 }
 
 .-☠-a-colorPrimary-800 {
-  --☠-a-color: #a30000;
+  --☠-a-color: #04348d;
 }
 
 .-☠-a-colorPrimary-900 {
-  --☠-a-color: maroon;
+  --☠-a-color: #03296f;
 }
 
 .-☠-a-colorSecondary-100 {
-  --☠-a-color: #8080ff;
+  --☠-a-color: #f6a6b3;
 }
 
 .-☠-a-colorSecondary-200 {
-  --☠-a-color: #5c5cff;
+  --☠-a-color: #f38c9e;
 }
 
 .-☠-a-colorSecondary-300 {
-  --☠-a-color: #3d3dff;
+  --☠-a-color: #f1778b;
 }
 
 .-☠-a-colorSecondary-400 {
-  --☠-a-color: #1f1fff;
+  --☠-a-color: #ef6179;
 }
 
 .-☠-a-colorSecondary-500 {
-  --☠-a-color: blue;
+  --☠-a-color: #ed4c67;
 }
 
 .-☠-a-colorSecondary-600 {
-  --☠-a-color: #0000e0;
+  --☠-a-color: #ea2a4a;
 }
 
 .-☠-a-colorSecondary-700 {
-  --☠-a-color: #0000c2;
+  --☠-a-color: #d81636;
 }
 
 .-☠-a-colorSecondary-800 {
-  --☠-a-color: #0000a3;
+  --☠-a-color: #b6122e;
 }
 
 .-☠-a-colorSecondary-900 {
-  --☠-a-color: navy;
+  --☠-a-color: #8e0e24;
 }
 
 .-☠-a-colorAccent-100 {
-  --☠-a-color: #40ff40;
+  --☠-a-color: #e2f29c;
 }
 
 .-☠-a-colorAccent-200 {
-  --☠-a-color: #0bff0b;
+  --☠-a-color: #d9ee80;
 }
 
 .-☠-a-colorAccent-300 {
-  --☠-a-color: #00dc00;
+  --☠-a-color: #d2eb68;
 }
 
 .-☠-a-colorAccent-400 {
-  --☠-a-color: #00ae00;
+  --☠-a-color: #cbe850;
 }
 
 .-☠-a-colorAccent-500 {
-  --☠-a-color: green;
+  --☠-a-color: #c4e538;
 }
 
 .-☠-a-colorAccent-600 {
-  --☠-a-color: #007100;
+  --☠-a-color: #b9de1d;
 }
 
 .-☠-a-colorAccent-700 {
-  --☠-a-color: #006100;
+  --☠-a-color: #a0c019;
 }
 
 .-☠-a-colorAccent-800 {
-  --☠-a-color: #005200;
+  --☠-a-color: #87a115;
 }
 
 .-☠-a-colorAccent-900 {
-  --☠-a-color: #004000;
+  --☠-a-color: #697e10;
 }
 
 .-☠-a-colorNeutral-100 {
-  --☠-a-color: silver;
+  --☠-a-color: #c8c8c8;
 }
 
 .-☠-a-colorNeutral-200 {
-  --☠-a-color: #aeaeae;
+  --☠-a-color: #b9b9b9;
 }
 
 .-☠-a-colorNeutral-300 {
-  --☠-a-color: #9e9e9e;
+  --☠-a-color: #ababab;
 }
 
 .-☠-a-colorNeutral-400 {
-  --☠-a-color: #8f8f8f;
+  --☠-a-color: #9e9e9e;
 }
 
 .-☠-a-colorNeutral-500 {
-  --☠-a-color: gray;
+  --☠-a-color: #919191;
 }
 
 .-☠-a-colorNeutral-600 {
-  --☠-a-color: #717171;
+  --☠-a-color: gray;
 }
 
 .-☠-a-colorNeutral-700 {
-  --☠-a-color: #616161;
+  --☠-a-color: #6e6e6e;
 }
 
 .-☠-a-colorNeutral-800 {
-  --☠-a-color: #525252;
+  --☠-a-color: #5d5d5d;
 }
 
 .-☠-a-colorNeutral-900 {
-  --☠-a-color: #404040;
+  --☠-a-color: #494949;
+}
+
+.-☠-a-colorInfo-100 {
+  --☠-a-color: #6cd5ef;
+}
+
+.-☠-a-colorInfo-200 {
+  --☠-a-color: #43c9eb;
+}
+
+.-☠-a-colorInfo-300 {
+  --☠-a-color: #20bfe7;
+}
+
+.-☠-a-colorInfo-400 {
+  --☠-a-color: #16a6ca;
+}
+
+.-☠-a-colorInfo-500 {
+  --☠-a-color: #1289a7;
+}
+
+.-☠-a-colorInfo-600 {
+  --☠-a-color: #107993;
+}
+
+.-☠-a-colorInfo-700 {
+  --☠-a-color: #0e687f;
+}
+
+.-☠-a-colorInfo-800 {
+  --☠-a-color: #0c586b;
+}
+
+.-☠-a-colorInfo-900 {
+  --☠-a-color: #094554;
+}
+
+.-☠-a-colorWarning-100 {
+  --☠-a-color: #fbcf8f;
+}
+
+.-☠-a-colorWarning-200 {
+  --☠-a-color: #fac270;
+}
+
+.-☠-a-colorWarning-300 {
+  --☠-a-color: #f9b655;
+}
+
+.-☠-a-colorWarning-400 {
+  --☠-a-color: #f8ab3a;
+}
+
+.-☠-a-colorWarning-500 {
+  --☠-a-color: #f79f1f;
+}
+
+.-☠-a-colorWarning-600 {
+  --☠-a-color: #ec8f08;
+}
+
+.-☠-a-colorWarning-700 {
+  --☠-a-color: #cc7c07;
+}
+
+.-☠-a-colorWarning-800 {
+  --☠-a-color: #ac6806;
+}
+
+.-☠-a-colorWarning-900 {
+  --☠-a-color: #865105;
+}
+
+.-☠-a-colorDanger-100 {
+  --☠-a-color: #f59093;
+}
+
+.-☠-a-colorDanger-200 {
+  --☠-a-color: #f27075;
+}
+
+.-☠-a-colorDanger-300 {
+  --☠-a-color: #ef565b;
+}
+
+.-☠-a-colorDanger-400 {
+  --☠-a-color: #ed3b41;
+}
+
+.-☠-a-colorDanger-500 {
+  --☠-a-color: #ea2027;
+}
+
+.-☠-a-colorDanger-600 {
+  --☠-a-color: #d6141b;
+}
+
+.-☠-a-colorDanger-700 {
+  --☠-a-color: #b91117;
+}
+
+.-☠-a-colorDanger-800 {
+  --☠-a-color: #9c0f14;
+}
+
+.-☠-a-colorDanger-900 {
+  --☠-a-color: #7a0b0f;
+}
+
+.-☠-a-colorSuccess-100 {
+  --☠-a-color: #4aff87;
+}
+
+.-☠-a-colorSuccess-200 {
+  --☠-a-color: #17ff66;
+}
+
+.-☠-a-colorSuccess-300 {
+  --☠-a-color: #00eb4f;
+}
+
+.-☠-a-colorSuccess-400 {
+  --☠-a-color: #00bf41;
+}
+
+.-☠-a-colorSuccess-500 {
+  --☠-a-color: #009432;
+}
+
+.-☠-a-colorSuccess-600 {
+  --☠-a-color: #00822c;
+}
+
+.-☠-a-colorSuccess-700 {
+  --☠-a-color: #007026;
+}
+
+.-☠-a-colorSuccess-800 {
+  --☠-a-color: #005f20;
+}
+
+.-☠-a-colorSuccess-900 {
+  --☠-a-color: #004a19;
 }
 
 .☠-m-colorSwatch {
@@ -257,7 +485,7 @@
 }
 
 .☠-o-sidebar [aria-current=page] {
-  background-color: var(--☠-c-primary);
+  background-color: #0652dd;
   color: white;
 }
 

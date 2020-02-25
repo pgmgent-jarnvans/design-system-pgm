@@ -1,3 +1,4 @@
+@use '../1-abstracts/functions' as f
 .☠-o-sidebar
   &_button
     //
@@ -13,5 +14,5 @@
       //
   
   [aria-current=page]
-    background-color: var(--☠-c-primary)
+    background-color: f.get-swatch('primary')
     color: white
