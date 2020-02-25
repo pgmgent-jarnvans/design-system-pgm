@@ -35,7 +35,7 @@ $color-palette: (
 $color-scheme: (
   'primary'  : list.nth($color-palette, 11),
   'secondary': list.nth($color-palette, 17),
-  'accent'   : list.nth($color-palette, 5),
+  'accent'   : list.nth($color-palette,  5),
   'neutral'  : list.nth($color-palette, 21),
   'info'     : list.nth($color-palette, 10),
   'warning'  : list.nth($color-palette,  2),
