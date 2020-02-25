@@ -38,24 +38,27 @@ $color-scheme: (
   'neutral': gray,
 );
 
+
+$color-swatches: ();
+@each $name, $value in $color-scheme {
+  $colors: (
+    '#{$name}': (
+      '100': #{color.scale($value, $lightness: 50%)},
+      '200': #{color.scale($value, $lightness: 36%)},
+      '300': #{color.scale($value, $lightness: 24%)},
+      '400': #{color.scale($value, $lightness: 12%)},
+      '500': #{$value},
+      '600': #{color.scale($value, $lightness: -12%)},
+      '700': #{color.scale($value, $lightness: -24%)},
+      '800': #{color.scale($value, $lightness: -36%)},
+      '900': #{color.scale($value, $lightness: -50%)},
+    )
+  );
+  $color-swatches: map.merge($color-swatches, $colors);
+}
+
 $fonts: (
   'heading': '"Long Cang", serif',
   'body'   : '"Long Cang", serif',
   'code'   : 'monospace',
 );
-
-$swatches: ();
-@each $name, $value in $color-scheme {
-  $colors: (
-      '#{$name}-100': #{color.scale($value, $lightness: 50%)},
-      '#{$name}-200': #{color.scale($value, $lightness: 36%)},
-      '#{$name}-300': #{color.scale($value, $lightness: 24%)},
-      '#{$name}-400': #{color.scale($value, $lightness: 12%)},
-      '#{$name}-500': #{$value},
-      '#{$name}-600': #{color.scale($value, $lightness: -12%)},
-      '#{$name}-700': #{color.scale($value, $lightness: -24%)},
-      '#{$name}-800': #{color.scale($value, $lightness: -36%)},
-      '#{$name}-900': #{color.scale($value, $lightness: -50%)},
-  );
-  $swatches: map.merge($swatches, $colors);
-}

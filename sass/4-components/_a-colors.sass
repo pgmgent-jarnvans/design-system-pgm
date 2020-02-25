@@ -1,5 +1,8 @@
+@use '../1-abstracts/functions' as f
 @use '../1-abstracts/variables' as v
 
 :root
-  @each $name, $value in v.$swatches
-      --☠-a-#{$name}: #{$value}
+  @each $name, $swatches in v.$color-swatches
+    $color-name: f.capitalize($name)
+    @each $swatch, $value in $swatches
+      --☠-a-color#{$color-name}-#{$swatch}: #{$value}
