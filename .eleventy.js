@@ -4,7 +4,9 @@ const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
     'css': 'assets/css',
-    'images': 'assets/images'
+    'images': 'assets/images',
+    'js': 'assets/js',
+    'models': 'assets/models'
   });
 
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
