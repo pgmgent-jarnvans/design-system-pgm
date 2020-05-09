@@ -5,6 +5,25 @@ eleventyNavigation:
 layout: default
 title: Screenshots
 ---
-<h1 class="☠-heading">{{ title }}</h1>
-<h2>Screenshot voor eerste mailing</h2>
-<img src="" alt="">
+<div class="title">
+    <h1 class="☠-heading">{{ title }}</h1>
+    <div class="bar"></div>
+</div>
+<div class="content-block">
+    <h2>Screenshot van account voor eerste mailing</h2>
+    <div class="screenshot">
+        <img src="{{ '/assets/images/screenshot-account-before.jpg' | url }}" alt="">
+    </div>
+</div>
+<div class="content-block">
+    <h2>Screenshot van eerste mailing</h2>
+    <div class="screenshot">
+        <img src="{{ '/assets/images/screenshot-mail.jpg' | url }}" alt="">
+    </div>
+</div>
+<div class="content-block">
+    <h2>Screenshot van account na eerste mailing</h2>
+    <div class="screenshot">
+        <img src="{{ '/assets/images/screenshot-account-after-first.jpg' | url }}" alt="">
+    </div>
+</div>

@@ -10,7 +10,7 @@
     "build": "npm run build:sass && npm run build:cleancss && npm run build:11ty",
     "dev:11ty": "npx @11ty/eleventy --serve",
     "dev:sass": "npx sass --watch sass:css scss:css",
-    "dev": "concurrently npm:dev:sass npm:dev:11ty",
+    "dev": "npm run dev:11ty",
     "start": "npm run dev"
   },
   "keywords": [],
