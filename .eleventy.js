@@ -18,6 +18,6 @@ module.exports = function (eleventyConfig) {
     },
     htmlTemplateEngine: 'njk',
     markdownTemplateEngine: 'njk',
-    pathPrefix: '/opdracht-digitale-marketing/'
+    pathPrefix: '/opdracht-digitale-marketing'
   };
 };
