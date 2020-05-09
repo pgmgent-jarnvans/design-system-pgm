@@ -1,0 +1,12 @@
+<nav class="☠-sidebar">
+    <h1 class="☠-sidebar_title">
+        <a class="☠-sidebar_button" href="{{ '/' | url }}">{{ site.title }}</a>
+    </h1>
+    <ul class="☠-sidebar_list -☠-level-1">        
+        {% for navPage in collections.all | eleventyNavigation %}
+                <li class="☠-sidebar_item -☠-level-1">
+                    <a class="☠-sidebar_button" href="{{ navPage.url | url }}"{% if page.url == navPage.url %} aria-current="page"{% endif %}>{{ navPage.key }}</a>
+                </li>
+        {% endfor %}
+    </ul>
+</nav>

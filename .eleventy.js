@@ -1,5 +1,4 @@
 const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
-const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
@@ -10,7 +9,6 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
-  eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addWatchTarget("./css/");
 
   return {
@@ -20,6 +18,6 @@ module.exports = function (eleventyConfig) {
     },
     htmlTemplateEngine: 'njk',
     markdownTemplateEngine: 'njk',
-    pathPrefix: '/design-system-pgm/'
+    pathPrefix: '/opdracht-digitale-marketing/'
   };
 };

@@ -6,7 +6,7 @@
   "scripts": {
     "build:11ty": "npx @11ty/eleventy",
     "build:cleancss": "npx cleancss ./css/main.css --output ./css/main.css --source-map",
-    "build:sass": "npx sass sass:css scss:css",
+    "build:sass": "npx sass scss:css",
     "build": "npm run build:sass && npm run build:cleancss && npm run build:11ty",
     "dev:11ty": "npx @11ty/eleventy --serve",
     "dev:sass": "npx sass --watch sass:css scss:css",

@@ -1,0 +1,29 @@
+$font-family: 'Roboto', sans-serif;
+
+.a-typography {
+  $font-family: 'Roboto', sans-serif;
+  color: $text-black;
+
+  &_block {
+    margin-bottom: 20px;
+  }
+
+  &_title {
+    font-weight: 700;
+    font-size: 40px;
+  }
+  
+  &_subtitle, &_nav {
+    font-weight: 700;
+    font-size: 24px;
+  }
+  
+  &_label,  &_text, &_button {
+    font-weight: 700;
+    font-size: 16px;
+  }
+  &_text, &_button  {
+    color: $text-grey;
+  }
+
+}

@@ -1,0 +1,57 @@
+.o-navigation{
+    margin-bottom:30px;
+    
+    &_link{
+        display:flex;
+    }    
+    &_button{
+        border:1px solid $green-primary;
+        color:$green-primary;
+        padding:20px;
+        font-weight: bold;
+        }
+    &_main {
+        display:flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: $back-grey;
+        width: 300px;
+        height:60px;
+        margin-top:30px;
+    }    
+    &_search,&_profile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+  
+        i {
+          font-size: 20px;
+          margin-bottom: 5px;
+        }
+  
+        span {
+          font-size: 15px;
+        }
+    }
+    &_add{
+        border-radius: 50px;
+        width: 60px;
+        height: 60px;
+        border:0;
+        color:$white;
+        font-weight: bold;
+        background-color: $green-primary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top:-10px;
+            i{
+                font-size: 30px;
+            }
+    }
+    
+}
+.active{
+    background-color: $green-primary;
+    color:$white;
+}
