@@ -5,7 +5,7 @@ module.exports = function (eleventyConfig) {
     'css': 'assets/css',
     'images': 'assets/images',
     'js': 'assets/js',
-    'models': 'assets/models'
+    'files': 'assets/files'
   });
 
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
