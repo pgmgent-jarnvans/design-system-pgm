@@ -116,6 +116,10 @@ main {
   margin-bottom: 12px;
 }
 
+.content-block.first {
+  margin-top: 20px;
+}
+
 .screenshot {
   width: 90%;
 }
@@ -124,10 +128,15 @@ main {
   width: 100%;
 }
 
+.files {
+  display: flex;
+}
+
 .file-download {
   display: inline-flex;
   flex-direction: column;
   align-items: center;
+  margin-right: 60px;
 }
 
 .file-download > * {
