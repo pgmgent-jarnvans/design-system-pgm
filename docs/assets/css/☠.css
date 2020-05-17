@@ -148,7 +148,7 @@ main {
 }
 
 .file-download > a {
-  transition: all 1s ease-in-out;
+  transition: background 1s ease-in-out;
   display: block;
   padding: 10px 60px;
   border-radius: 50px;
