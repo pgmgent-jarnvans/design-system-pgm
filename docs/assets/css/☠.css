@@ -9,6 +9,10 @@
   --font-family: 'Open Sans', sans-serif;;
 }
 
+body {
+  line-height: 1.5;
+}
+
 h2 {
   font-size: 1.75rem;
   margin-bottom: 20px;
@@ -53,7 +57,7 @@ h2 {
   background: var(--white);
   padding: 0 30px;
   padding-top: 30px;
-  flex: 0 0 18%;
+  flex: 0 0 20%;
   min-height: calc(100vh - 92px);
   position: relative;
 }
@@ -103,13 +107,13 @@ h2 {
 }
 
 main {
-  flex: 0 0 78%;
+  flex: 0 0 75%;
   padding-top: 20px;
 }
 
 .content-block {
   margin-bottom: 28px;
-  padding-right: 200px;
+  padding-right: 650px;
 }
 
 .content-block > p {
