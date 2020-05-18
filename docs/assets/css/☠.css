@@ -163,6 +163,7 @@ main {
 }
 
 footer {
+  width: 100%;
   background: var(--blue);
   padding: 20px 0;
   text-align: center;
